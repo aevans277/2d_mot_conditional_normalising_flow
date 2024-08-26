@@ -45,7 +45,7 @@ model.to(device)
 
 # TRAINING #
 batch_size = 128
-epochs = 8
+epochs = 1
 epsilon = 1e-10  # small constant to avoid log(0)
 
 optimiser = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=1e-5)
